@@ -1,6 +1,15 @@
-args/__pycache__/
-rain/__pycache__/
-args/json_for_metricx/
-simpo_out/
+# Experiment outputs
+run_outs/
+run_outs_dicv/
+results/
+json_for_metricx/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
