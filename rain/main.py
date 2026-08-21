@@ -27,7 +27,7 @@ parser.add_argument('--modelname', type=str, default='meta-llama/Meta-Llama-3.1-
 parser.add_argument('-g','--gpu_index', type=int, nargs='+', default=[0])
 parser.add_argument('-s',"--start", type=int, default=0)
 parser.add_argument('-e','--end', type=int, default=100)
-parser.add_argument('-d', '--dataset', type=str, default='/home/raychen/20241202/helpsteer/dataset/helpsteer3_general_test_valid_only.csv')
+parser.add_argument('-d', '--dataset', type=str, default=f"{os.environ.get('P2A_DATASET_ROOT', 'datasets')}/helpsteer/helpsteer3_general_test_valid_only.csv")
 parser.add_argument('--outdir', type=str, default='./baseline/rain/run_outs')
 args = parser.parse_args()
 

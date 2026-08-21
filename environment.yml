@@ -184,4 +184,3 @@ dependencies:
       - yarl==1.18.3
       - zh-core-web-sm==3.8.0
       - zope-interface==7.2
-prefix: /home/raychen/anaconda3/envs/p2a

@@ -25,7 +25,7 @@ parser.add_argument("--out_file", type=str, default="args/run_outs")
 args = parser.parse_args()
 
 print(f"{args=}")
-dataset = f'/home/raychen/20241202/acl_datasets/validation/{args.type}/acl2025_validation_zh-{args.language}_{args.type}.csv'
+dataset = f"{os.environ.get('P2A_DATASET_ROOT', 'datasets')}/acl_datasets/validation/{args.type}/acl2025_validation_zh-{args.language}_{args.type}.csv"
 
 if args.recover:
     print("[INFO]: LOOKS LIKE YOU WANT TO RECOVER SOME RESULTS,")

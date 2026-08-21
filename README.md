@@ -59,8 +59,8 @@ Datasets are not included — point `--dataset` at the HelpSteer / ACL-2025 tran
 files, or take them from the official repository. Each script's remaining flags are at
 the top of its `main.py`.
 
-> The `--dataset` defaults still point at the lab machine these were run on
-> (`/home/raychen/...`). Pass the flag explicitly.
+> The `--dataset` defaults resolve to `$P2A_DATASET_ROOT/...` (falls back to
+> `./datasets/...` when unset). Set `P2A_DATASET_ROOT` or pass `--dataset` explicitly.
 
 ## Citation
 

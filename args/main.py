@@ -22,7 +22,7 @@ parser.add_argument('-l',"--llm_gpu", type=str, default="cuda:0")
 parser.add_argument('-r',"--rm_gpu", type=str, default="cuda:0")
 parser.add_argument('-s',"--start", type=int, default=100)
 parser.add_argument('-e','--end', type=int, default=694)
-parser.add_argument('-d', '--dataset', type=str, default='/home/raychen/20241202/helpsteer/dataset/helpsteer3_general_test_valid_only.csv')
+parser.add_argument('-d', '--dataset', type=str, default=f"{os.environ.get('P2A_DATASET_ROOT', 'datasets')}/helpsteer/helpsteer3_general_test_valid_only.csv")
 args = parser.parse_args()
 
 print(f"{args=}")
